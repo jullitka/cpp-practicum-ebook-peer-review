@@ -46,6 +46,7 @@ public:
         double result = static_cast<double> (count_users) / (user_progress_.size() - 1);
         return result;
     }
+
 private:
     unordered_map<int, int> user_progress_; // прогресс пользователей
     map<int, int> page_user_count_; // количество пользовательей на каждой странице книги
@@ -89,6 +90,7 @@ void ReadAndProcessRequests(ReadingSystem& system, istream& input) {
         ParseAndPrint(system, line);
     }
  }
+
 
 int main() {
     ReadingSystem system;
