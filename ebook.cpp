@@ -84,6 +84,7 @@ void ReadAndProcessRequests(ReadingSystem& system, istream& input) {
     }
  }
 
+
 int main() {
     ReadingSystem system;
     ReadAndProcessRequests(system, cin);
